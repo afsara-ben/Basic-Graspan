@@ -1,0 +1,39 @@
+main(){
+
+	STEP 1: READ INPUT FROM FILE AND STORE THE GRAPH IN ADJACENCY LIST adjlist
+
+	STEP 2: PREPROCESSING 
+	/*store incoming edges of every vertex in V
+	  example for  0 1 A it is stored as <1, <A, [0,4]>> */
+	inMap = buildInEdges(){}
+	
+	STEP 3: DRIVER CODE
+	for each vertex i in vertex list V do
+		if i not already visited:
+        	basicGraspan(i, adjlist, inMap);
+}
+
+basicGraspan() {
+	// Mark all the vertices as not visited
+	visited[i] = false for all i in V
+	// Create a queue for BFS
+	list<int>q
+	// Mark the current node as visited and enqueue it
+	visited[curr_node] = true
+	q.insert(curr_node)
+
+	while(q is not empty) do
+	  //pop first vertex v1 from q
+	  //nv has all the neighboring vertex of v1
+	  // itr iterates over nv
+	  //while (itr is not empty) {
+		//if v1 has an edge with label 'B'
+			//v2 = source vertex of incoming edges in v1 having label 'A'
+			insert into output graph edge (v1, v2, 'C')
+		//if (itr is not visited)
+		visited[itr] = true
+		q.insert(itr)
+	  itr++
+}
+ 
+  
